@@ -1,0 +1,8 @@
+LIBRARY mugen-lens-math
+EXPORTS
+    GlMath_GetAbiVersion
+    GlMath_Create
+    GlMath_Destroy
+    GlMath_SetLens
+    GlMath_Warp
+    GlMath_SourcePixel
