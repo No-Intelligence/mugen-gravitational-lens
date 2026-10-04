@@ -1,0 +1,16 @@
+/build/
+/dist/
+/tests/work/
+__pycache__/
+*.pyc
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.dll
+*.exe
+*.raw
+*.log
+verification.enable
+.vs/
