@@ -1,0 +1,25 @@
+; Diagnostic case only: center (320,240), final composite, radius 180,
+; Einstein radius 70, softened core 18. These are NOT user-approved layer/center defaults.
+; Uses the supplied kfm-gravitational-lens-test as its base; no sprite priority changes.
+[Statedef -2]
+
+[State -2, Lens shape]
+type = DisplayToClipboard
+trigger1 = RoundState = 2
+text = "GL1:shape:%d:%d:%d"
+params = ID, 180, 18
+ignorehitpause = 1
+
+[State -2, Lens final composite diagnostic]
+type = DisplayToClipboard
+trigger1 = RoundState = 2
+text = "GL1:set:%d:%d:%d:%d:%d"
+params = ID, 320, 240, 2147483647, 70
+ignorehitpause = 1
+
+[State -2, Stop outside fight]
+type = DisplayToClipboard
+trigger1 = RoundState != 2
+text = "GL1:off:%d"
+params = ID
+ignorehitpause = 1

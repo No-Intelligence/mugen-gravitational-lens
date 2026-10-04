@@ -1,0 +1,53 @@
+{
+  "params": {
+    "width": 640,
+    "height": 480,
+    "depth": 16,
+    "bytes_per_pixel": 2,
+    "center_x": 320,
+    "center_y": 240,
+    "radius": 512,
+    "einstein_radius": 70,
+    "core_radius": 18,
+    "layer": 0,
+    "owner_id": 32
+  },
+  "compared_pixels": 307200,
+  "mapping_mismatch": 0,
+  "changed_pixels": 200212,
+  "outside_radius_mismatch": 0,
+  "timed_samples": 5878,
+  "ignored_incomplete_rows": 1,
+  "interval": {
+    "mean_ms": 16.701950357264376,
+    "p99_ms": 31.9841,
+    "max_ms": 37.8354
+  },
+  "effect": {
+    "mean_ms": 2.188100867642055,
+    "p99_ms": 3.9529,
+    "max_ms": 9.0298
+  },
+  "average_render_fps": 59.873247052555044,
+  "intervals_over_16_6667_ms": 913,
+  "fps_scope": "one warped render per consecutive presentation ordinal; QPC immediately before warp, 120 warmup frames omitted",
+  "timing_position": "sorted sprite boundary for layer mode; before presentation for composite mode",
+  "order_identical": true,
+  "node_mutations": 0,
+  "foreground_compared_pixels": 30248,
+  "foreground_mismatch": 0,
+  "foreground_scope": "first-frame opaque KFM raster pixels changed in unwarped control; not all blending modes",
+  "draw_keys": [
+    -3,
+    0,
+    0,
+    3
+  ],
+  "hashes": {
+    "final-present.raw": "2272a77ca556c9b6e6ad76c90092c4638096600bdd3f4b517641115d9ce104b9",
+    "frame-after.raw": "dd3665b35001497270f4907f2471f54beb644e7decdd2e25e97211c3e6eab249",
+    "frame-before.raw": "59f540dceb4a353fa8b5b2db505d02827c1c3ddaf0459a9a02c08b256b9ee9db",
+    "queue-control.raw": "a0a910d8fa07f97d3e6b6e803f80a88c9d7c76bca80eed94638c22941bd381ad",
+    "queue-lensed.raw": "2272a77ca556c9b6e6ad76c90092c4638096600bdd3f4b517641115d9ce104b9"
+  }
+}

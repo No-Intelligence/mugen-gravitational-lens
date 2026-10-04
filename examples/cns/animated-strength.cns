@@ -1,0 +1,24 @@
+; Isolated verification values, not user-selected coordinates or layer policy.
+; Boundary key 1, radius 128, core 64, animated Einstein radius 0..128.
+[Statedef -2]
+
+[State -2, Lens shape]
+type = DisplayToClipboard
+trigger1 = RoundState = 2
+text = "GL1:shape:%d:%d:%d"
+params = ID, 128, 64
+ignorehitpause = 1
+
+[State -2, Lens boundary]
+type = DisplayToClipboard
+trigger1 = RoundState = 2
+text = "GL1:set:%d:%d:%d:%d:%d"
+params = ID, 320, 240, 1, floor(64+64*cos(gametime*3.1415/120))
+ignorehitpause = 1
+
+[State -2, Stop outside fight]
+type = DisplayToClipboard
+trigger1 = RoundState != 2
+text = "GL1:off:%d"
+params = ID
+ignorehitpause = 1

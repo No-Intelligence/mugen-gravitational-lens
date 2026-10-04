@@ -1,0 +1,8 @@
+LIBRARY mod
+EXPORTS
+    MugenMod_GetAbiVersion
+    MugenMod_Init
+    GlMod_GetAbiVersion
+    GlMod_Set
+    GlMod_Disable
+    GlMod_IsLayerSupported

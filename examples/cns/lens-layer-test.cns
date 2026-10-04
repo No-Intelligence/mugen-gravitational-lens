@@ -1,0 +1,50 @@
+; Isolated verification values, not user-selected coordinates or layer policy.
+; Boundary key 0: native keys < 0 behind; keys >= 0 in front.
+[Statedef -2]
+
+[State -2, Lens shape]
+type = DisplayToClipboard
+trigger1 = RoundState = 2
+text = "GL1:shape:%d:%d:%d"
+params = ID, 180, 18
+ignorehitpause = 1
+
+[State -2, Lens boundary]
+type = DisplayToClipboard
+trigger1 = RoundState = 2
+text = "GL1:set:%d:%d:%d:%d:%d"
+params = ID, 320, 240, 0, 70
+ignorehitpause = 1
+
+[State -2, Stop outside fight]
+type = DisplayToClipboard
+trigger1 = RoundState != 2
+text = "GL1:off:%d"
+params = ID
+ignorehitpause = 1
+
+[State -2, Rear marker]
+type = Explod
+trigger1 = RoundState = 2
+trigger1 = NumExplod(9901) = 0
+id = 9901
+anim = 0
+postype = left
+pos = 145, 145
+scale = 1, 1
+sprpriority = -3
+removetime = -1
+ownpal = 1
+
+[State -2, Front marker]
+type = Explod
+trigger1 = RoundState = 2
+trigger1 = NumExplod(9902) = 0
+id = 9902
+anim = 0
+postype = left
+pos = 175, 145
+scale = 1, 1
+sprpriority = 3
+removetime = -1
+ownpal = 1
